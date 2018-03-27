@@ -11,5 +11,5 @@ Speech activity detection
     at the command prompt. <argument_list> is all the 
     arguments you want to pass to your application. For example, 
     
-       ./run_get_TOcomboSAD_output.sh /mathworks/home/application/v93
+       ./run_get_TOcomboSAD_output.sh /usr/local/MATLAB/MATLAB_Runtime/v93/ /home/vagrant/TOcomboSAD/wav_filelist.txt 0 0.5
        

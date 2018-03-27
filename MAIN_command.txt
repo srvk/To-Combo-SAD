@@ -1,0 +1,8 @@
+# Example command on bash prompt
+# Please install correct version of MCR before running this command. Look at readme.txt
+./run_get_TOcomboSAD_output.sh <mcr_directory> <argument_list>
+
+#bash ~/workspace/TO-Combo-SAD_binary_March2018/TO-Combo-SAD_matlabBinary/run_get_TOcomboSAD_output.sh ~/MCR_R2017b_glnxa64/v93 '/home/harish/workspace/TO-Combo-SAD_binary_March2018/TO-Combo-SAD_matlabBinary/wav_filelist.txt' '0' '0.5'
+
+#get_TOcomboSAD_output(wavList, Normalize, weight)
+

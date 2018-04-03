@@ -1,0 +1,11 @@
+# Example command on bash prompt
+# Please install correct version of MCR before running this command. Look at readme.txt
+#./run_get_TOcomboSAD_output.sh <mcr_directory> <argument_list>
+
+#get_TOcomboSAD_output(wavList, Normalize, weight, GMM_file_path)
+
+bash ~/workspace/March-30-ToComboSAD-binary/TO-Combo-binary-v3/run_get_TOcomboSAD_output_v3.sh ~/MCR_R2017b_glnxa64/v93 '~/workspace/March-30-ToComboSAD-binary/TO-Combo-binary-v3/wav_filelist.txt' '0' '0.5' '~/workspace/March-30-ToComboSAD-binary/TO-Combo-binary-v3/UBMnodct256Hub5.txt'
+
+
+
+

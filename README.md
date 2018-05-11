@@ -15,9 +15,9 @@ Any public reports or papers derived using these scripts should cite the followi
 ```
 ./run.sh <wavfile.wav>
 ```
-Sets environment
-Runs ToComboSAD
-Converts to RTTM
+Sets environment  
+Runs ToComboSAD  
+Converts to RTTM  
 Places output in `<wavfile>.ToCombo.rttm`
 
 -run_get_TOcomboSAD_output.sh (shell script for temporarily setting environment variables 

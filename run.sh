@@ -4,6 +4,14 @@
 #
 # run ToComboSAD on a .wav file
 
+if [ $# -ne 2 ]; then
+  echo "Usage: run.sh <wavfile.wav>"
+  echo "where wavfile is the name of a wav file"
+  echo "output is <wavfile>.ToCombo.rttm"
+  exit 1;
+fi
+
+
 SCRIPT=$(readlink -f $0)
 # Absolute path this script is in. /home/user/bin
 BASEDIR=`dirname $SCRIPT`

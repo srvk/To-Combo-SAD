@@ -10,6 +10,16 @@ Any public reports or papers derived using these scripts should cite the followi
 [2] A. Ziaei, L. Kaushik, A. Sangwan, J.H.L. Hansen, "Speech Activity Detection for NASA Apollo Space Missions: Challenges and Solutions," ISCA Interspeech-2014, Paper #994, Singapore, Sept. 14-18, 2014
 
 ## Running
+
+### Easier run script:
+```
+./run.sh <wavfile.wav>
+```
+Sets environment  
+Runs ToComboSAD  
+Converts to RTTM  
+Places output in `<wavfile>.ToCombo.rttm`
+
 -run_get_TOcomboSAD_output.sh (shell script for temporarily setting environment variables 
                                and executing the application)
    -to run the shell script, type

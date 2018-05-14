@@ -4,7 +4,7 @@
 #
 # run ToComboSAD on a .wav file
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 1 ]; then
   echo "Usage: run.sh <wavfile.wav>"
   echo "where wavfile is the name of a wav file"
   echo "output is <wavfile>.ToCombo.rttm"

@@ -20,6 +20,17 @@ Runs ToComboSAD
 Converts to RTTM  
 Places output in `<wavfile>.ToCombo.rttm`
 
+Example:
+```
+sox /vagrant/test2.mp3 /vagrant/test2.wav
+./run.sh /vagrant/test2.wav
+cat /vagrant/test2.ToCombo.rttm
+SPEAKER /vagrant/test2 1 0 1.98  <NA> <NA> spkr <NA>
+SPEAKER /vagrant/test2 1 2.52 3.17  <NA> <NA> spkr <NA>
+SPEAKER /vagrant/test2 1 6.49 3.3  <NA> <NA> spkr <NA>
+SPEAKER /vagrant/test2 1 10.88 2.69  <NA> <NA> spkr <NA>
+```
+### low level run script:
 -run_get_TOcomboSAD_output.sh (shell script for temporarily setting environment variables 
                                and executing the application)
    -to run the shell script, type

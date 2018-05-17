@@ -1,4 +1,4 @@
-# TOcomboSAD
+# To-Combo-SAD
 Speech activity detection 
 
 # NOTE:

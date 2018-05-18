@@ -24,8 +24,9 @@ basename="${filename%.*}"
 MCR=/usr/local/MATLAB/MATLAB_Runtime/v93
 export LD_LIBRARY_PATH=$MCR/runtime/glnxa64:$MCR/bin/glnxa64:$MCR/sys/os/glnxa64:
 
-echo $1 > $BASEDIR/filelist.txt
+mkdir $dirname/feat
+echo $1 > $dirname/feat/filelist.txt
 
-./run_get_TOcomboSAD_output_v3.sh $MCR $BASEDIR/filelist.txt 0 0.5 $BASEDIR/UBMnodct256Hub5.txt
-python $BASEDIR/tocombo2rttm.py $1.ToCombo.txt > $dirname/$basename.ToCombo.rttm
+./run_get_TOcomboSAD_output_v3.sh $MCR $dirname/feat/filelist.txt 0 0.5 $BASEDIR/UBMnodct256Hub5.txt
+python $BASEDIR/tocombo2rttm.py $1.ToCombo.txt $basename > $dirname/tocombosad_$basename.rttm
 

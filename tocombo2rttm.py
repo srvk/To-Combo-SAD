@@ -6,6 +6,10 @@
 # as frames of either speech or nonspeech
 # produce a sequence of utterances in RTTM format, collapsing duplicate frames
 
+# input arguments:
+# $1 filename of ToComboSAD output format file e.g. test2.wav.ToCombo.txt
+# $2 base filename e.g. test2
+
 # Apache 2.0
 
 
@@ -20,7 +24,7 @@ fread = open(sys.argv[1], 'r')
 lastframe = "0"
 thesum = 0
 theonset = 0
-filename = sys.argv[1].split(".")[0]  # massage into basename (all before first ".")
+filename = sys.argv[2]
 
 for frame in fread.readlines():
     frame = frame.replace('\n','').strip()
@@ -32,7 +36,7 @@ for frame in fread.readlines():
 
     if yesno == "0": # output utterance when transition from 1 to 0
         if lastframe == "1":
-            print "SPEAKER", filename, "1", theonset, thesum, " <NA> <NA> spkr <NA>"
+            print "SPEAKER\t", filename, "\t1\t", theonset, "\t", thesum, "\t<NA>\t<NA>\tspeech\t<NA>"
     else:
         if lastframe == "1": # keep adding up "on" frames
             thesum = thesum + 0.01

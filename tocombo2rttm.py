@@ -36,7 +36,7 @@ for frame in fread.readlines():
 
     if yesno == "0": # output utterance when transition from 1 to 0
         if lastframe == "1":
-            print "SPEAKER\t", filename, "\t1\t", theonset, "\t", thesum, "\t<NA>\t<NA>\tspeech\t<NA>"
+            print "SPEAKER ", filename, " 1 ", theonset, " ", thesum, " <NA> <NA> speech <NA>"
     else:
         if lastframe == "1": # keep adding up "on" frames
             thesum = thesum + 0.01
